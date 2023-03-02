@@ -47,3 +47,17 @@ id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
 	age  INT,
 	date_of_graduation DATE
 );
+
+CREATE TABLE specializations(
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+	species_id INT NOT NULL,
+	vets_id  INT NOT NULL,
+	CONSTRAINT fk_species 
+	 FOREIGN KEY (species_id)
+	REFERENCES species(id)
+	ON UPDATE CASCADE,
+	CONSTRAINT fk_vets
+	FOREIGN KEY (vets_id)
+	REFERENCES vets(id)
+	ON UPDATE CASCADE
+);
