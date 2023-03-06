@@ -40,3 +40,6 @@ ADD CONSTRAINT fk_owners
 FOREIGN KEY(owner_id)
 REFERENCES owners(id)
 ON DELETE CASCADE;
+
+-- Add an email column to my owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
