@@ -43,3 +43,9 @@ ON DELETE CASCADE;
 
 -- Add an email column to my owners table
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX animals_asc ON visits (animals_id ASC);
+
+CREATE INDEX vets_asc ON visits (vets_id ASC);
+
+CREATE INDEX owners_asc ON owners (email ASC);
