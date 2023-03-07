@@ -33,3 +33,33 @@ CREATE TABLE invoices (
 	ON UPDATE CASCADE
 );
 
+CREATE TABLE invoice_items (
+ id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+ unit_price   DECIMAL,
+ quantity  INT,
+ total_price DECIMAL,
+ invoice_id  INT,
+ treatment_id INT,
+  CONSTRAINT fk_invoices
+	FOREIGN KEY (invoice_id)
+	REFERENCES invoices(id)
+	ON UPDATE CASCADE,
+  CONSTRAINT fk_treatments
+	FOREIGN KEY (treatment_id)
+	REFERENCES treatments(id)
+	ON UPDATE CASCADE
+);
+
+CREATE TABLE medical_histories_treatments (
+   id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+   medical_histories_id  INT,
+   treatments_id INT,
+   CONSTRAINT fk_medical_histories_m2m
+	FOREIGN KEY (medical_histories_id)
+	REFERENCES medical_histories(id)
+	ON UPDATE CASCADE, 
+     CONSTRAINT fk_treatments_m2m
+	FOREIGN KEY (treatments_id)
+	REFERENCES treatments(id)
+	ON UPDATE CASCADE, 
+);
