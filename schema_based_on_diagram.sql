@@ -63,3 +63,10 @@ CREATE TABLE medical_histories_treatments (
 	REFERENCES treatments(id)
 	ON UPDATE CASCADE
 );
+
+CREATE INDEX ON medical_histories (patient_id);
+CREATE INDEX ON invoices (medical_history_id);
+CREATE INDEX ON invoice_items (invoice_id);
+CREATE INDEX ON invoice_items (treatment_id);
+CREATE INDEX ON medical_histories_treatments (medical_histories_id);
+CREATE INDEX ON medical_histories_treatments (treatments_id);
