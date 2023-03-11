@@ -215,7 +215,7 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Add functionality]**
+- [ ] **Add functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
