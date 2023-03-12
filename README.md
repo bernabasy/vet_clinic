@@ -206,6 +206,11 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/@bernabasjosef)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabas-yosef)
 
+👤 **Botlhale Setou**
+
+- GitHub: [@botlhale-setou](https://github.com/Botlhale-Setou)
+- Twitter: [@botlhale_setou](https://twitter.com/Botlhale_Setou)
+- LinkedIn: [@botlhalesetou](https://www.linkedin.com/in/botlhalesetou/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,7 +220,7 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Add functionality]**
+- [ ] **Add functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
