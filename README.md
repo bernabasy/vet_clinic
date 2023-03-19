@@ -66,7 +66,7 @@ After you're finished please remove all the comments and instructions!
 
 >Vet Clinic Database is an SQL project where one can create a database, create a table, populate the table and querry the table.
 
-**[your_project__name]** is a...
+**[ Vet Clinic Database ]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
